@@ -11,10 +11,10 @@
     .container {
         width: 500px;
         margin: auto;
-        background: #c5e7ec;
+        background: #c1e1e7;
         padding: 15px;
         border-radius: 8px;
-        border: 1px solid #3ad9df;
+        border: 1px solid #c1e1e7;
     }
     h2 {
         text-align: center;
@@ -23,21 +23,21 @@
 </head>
 <body>
     <div class="container">
-    <table>
-      <h3>แบบสอบถาม</h3>
-      <hr>
+        <table>
+        <h2>แบบสอบถาม</h2>
+    <hr>
+    <form method="post" novalidate>
       
-      <form method="post" novalidate>
       
       
             <label for="name"><b>ข้อมูลตอบแบบสอบถาม</b></label><br><br>
 
 
-            <label for="name"><b>ชื่อ-นามสกุล </b></label>
+            <label style="display: inline-block; width: 100px;"><b>ชื่อ-นามสกุล </b></label>
             <input placeholder="" type="text" name="name" id="name" required><br>
 
 
-            <label for="Student id"><b>รหัสนักศึกษา </b></label>
+            <label style="display: inline-block; width: 100px;"><b>รหัสนักศึกษา </b></label>
             <input placeholder="" type="number" name="Student id" id="Student id" required><br>
 
             
@@ -47,7 +47,7 @@
             <br><br>
             
             
-            <label for="faculty"><b> สังกัดคณะ </b></label>
+            <label for="faculty" style="display: inline-block; width: 100px; vertical-align: top;"><br><br><br><b> สังกัดคณะ </b></label>
             <select id="faculty" size="9">
                 <option>วิทยาศาสตร์</option>
                 <option>วิทยาการคอมพิวเตอร์</option>
@@ -72,9 +72,9 @@
             <label for="name"><b>ผลไม้ที่ชื่นชอบ</b></label><br>
             <input type="checkbox"> มะม่วง
             <input type="checkbox"> น้อยหน่า
-            <input type="checkbox"> ลำไย
-            <br>
             <input type="checkbox"> ทุเรียน
+            <br>
+            <input type="checkbox"> ลำไย
             <input type="checkbox"> ฝรั่ง
             <input type="checkbox"> แตงโม
             <br><br>
